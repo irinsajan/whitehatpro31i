@@ -1,9 +1,9 @@
 class Plinko{
-    constructor(x,y,radius){
-        this.body = Bodies.circle(x,y,radius,{restitution:0.3, friction: 0.5, density:1.2});
+    constructor(x,y){
+        this.body = Bodies.circle(x,y,10,{isStatic: true});
         //this.colour = color(random(0,255),random(0,255),random(0,25))
         World.add(world,this.body);
-        this.radius = radius;
+        this.radius = 10;
         //this.image = loadImage("polygon.png");
     }
     display(){
